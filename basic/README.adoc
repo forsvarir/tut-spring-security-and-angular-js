@@ -72,7 +72,7 @@ $ mvn spring-boot:run
 
 and go to a browser at http://localhost:8080[http://localhost:8080]. When you load the home page you should get a browser dialog asking for username and password (the username is "user" and the password is printed in the console logs on startup). There's actually no content yet (or maybe the default "hero" tutorial content from the `ng` CLI), so you should get essentially a blank page.
 
-TIP: If you don't like scraping the console log for the password just add this to the "application.properties" (in "src/main/resources"): `security.user.password=password` (and choose your own password). We did this in the sample code using "application.yml".
+TIP: If you don't like scraping the console log for the password just add this to the "application.properties" (in "src/main/resources"): `spring.security.user.password=password` (and choose your own password). We did this in the sample code using "application.yml".
 
 In an IDE, just run the `main()` method in the application class (there is only one class, and it is called `UiApplication` if you used the "curl" command above).
 
